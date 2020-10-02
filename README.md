@@ -29,7 +29,7 @@
 
 然后点击载入事件：
 
-![20201002133405.jpg][4]
+![20201002133348.jpg][4]
 
 进入后修改服务器地址为你的，返回即可自动保存
 
@@ -56,7 +56,7 @@ QQ：2253162533
   [1]: https://github.com/Xiao-A1/FaceSign
   [2]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/2099534770.jpg
   [3]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/1748416036.jpg
-  [4]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/3660073404.jpg
+  [4]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/2499454118.jpg
   [5]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/2041343928.jpg
   [6]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/2121827184.jpg
   [7]: https://cdn.jsdelivr.net/gh/Xiao-A1/fasv/usr/uploads/2020/10/3935711987.jpg

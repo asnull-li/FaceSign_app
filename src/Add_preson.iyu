@@ -1,0 +1,147 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=vertical
+gravity=center_vertical
+paddingLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=Add
+textColor=#009688
+textSize=22sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginLeft=45dp
+layout_marginRight=45dp
+layout_marginTop=45dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="EditText">
+<ppt>width=-1
+height=45dp
+text=
+hint=名字
+BackgroundColor=0
+textColor=#424242
+textSize=15.5sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-1
+height=1
+text=
+BackgroundColor=#ffd8d8d8</ppt>
+<event></event>
+</View>
+<View id="9" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="EditText">
+<ppt>width=-1
+height=45dp
+text=
+hint=年龄
+BackgroundColor=0
+textColor=#424242
+textSize=15.5sp
+textStyle=bold
+digits=1234567890</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="TextView">
+<ppt>width=-1
+height=1
+text=
+BackgroundColor=#ffd8d8d8</ppt>
+<event></event>
+</View>
+<View id="13" did="5" type="CardView">
+<ppt>width=-1
+height=45dp
+app_CardcornerRadius=5dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#ffffffff
+layout_marginTop=45dp</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#26A69A
+BackgroundRipple=#ffe5e5e5
+</ppt>
+<event><eventItme type="clicki">ug(7,"text",name)
+ug(10,"text",age)
+
+f(name==""||age=="")
+{
+  tw("输入不能为空！")
+  endcode
+}
+
+t()
+{
+  ss(sss.host+"api.php",api)
+  ss("type=add&age="+age+"&name="+name,post)
+  hs(api,post,"utf-8",back)
+  ufnsui()
+  {
+    tw(back)
+  }
+}</eventItme></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=确定
+textSize=15sp
+textColor=#ffffffff
+textStyle=bold</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//状态栏设置
+gvs(1,v1)
+java(null,v1,"android.view.View.setTranslationZ","float","100")
+//tw("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+//8192改成1024为白色
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+</eventItme></UIEventset>

@@ -1,0 +1,74 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=15dp
+BackgroundColor=#ffffffff
+BackgroundRipple=#eeeeee</ppt>
+<event><eventItme type="clicki">ulag(st_vW,1,file)
+ss(sss.host+"user_face/"+file+".jpg",imgurl)
+
+utw("","","Pic_utw.iyu","",false,v)
+{
+}
+gvs(v,9,id9)
+gvs(v,10,id10)
+t()
+{
+  hd(imgurl,"%faceSign/user_face.jpg",true,b)
+  f(b==0)
+  {
+    ufnsui()
+    {
+      us(id9,"visibility","gone")
+      us(id10,"visibility","visible")
+      us(id10,"src","%faceSign/user_face.jpg")
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=@mmexport1593949782455.png</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=2020-07-05
+layout_marginLeft=15dp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical|right
+paddingRight=10dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="ImageView">
+<ppt>width=50dp
+height=50dp
+src=@mmexport1593946204477.png
+padding=12dp
+BackgroundRipple=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本6
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">gvs(st_vW,preson_list.6,id6)
+gvs(st_vW,preson_list.5,id5)
+ug(id6,"text",status)
+f(status=="1")
+{
+  us(id5,"src","@mmexport1593946208228.png")
+}</eventItme></UIEventset>

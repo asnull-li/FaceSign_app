@@ -1,0 +1,75 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=vertical
+gravity=center_vertical
+paddingLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=About
+textColor=#009688
+textSize=22sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="ImageView">
+<ppt>width=95dp
+height=95dp
+src=@Face_sign_512x512.png
+layout_gravity=center_horizontal
+layout_marginTop=30dp</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="TextView">
+<ppt>width=-1
+height=-2
+text=FaceSign
+gravity=center
+layout_marginTop=10dp
+textSize=18sp
+textColor=#424242
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="TextView">
+<ppt>width=-1
+height=1
+text=文本6
+layout_marginLeft=35dp
+layout_marginRight=35dp
+BackgroundColor=#ffc3c3c3
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="7" did="1" type="TextView">
+<ppt>width=-1
+height=-1
+text=FascSign是一款可运用于多个平台的人脸行踪智能记录系统，它可以登记人员行路轨迹助力智能防疫。
+layout_marginLeft=35dp
+layout_marginRight=35dp
+layout_marginTop=15dp
+lineSpacingMultiplier=1.5
+textSize=15sp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//状态栏设置
+gvs(1,v1)
+java(null,v1,"android.view.View.setTranslationZ","float","100")
+//tw("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+//8192改成1024为白色
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+</eventItme></UIEventset>

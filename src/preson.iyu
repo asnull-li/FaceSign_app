@@ -1,0 +1,244 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=Name
+textColor=#009688
+textSize=22sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="9" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical|right</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="ImageView">
+<ppt>width=50dp
+height=50dp
+src=@mmexport1593947290492.png
+padding=14dp
+layout_marginRight=5dp
+BackgroundRipple=#eeeeee
+visibility=gone</ppt>
+<event><eventItme type="clicki">utw("","","rename_utw.iyu","",false,v)
+{
+}</eventItme></event>
+</View>
+<View id="11" did="9" type="ImageView">
+<ppt>width=56dp
+height=56dp
+src=@mmexport1593947006978.png
+padding=14dp
+layout_marginRight=5dp
+BackgroundRipple=#eeeeee</ppt>
+<event><eventItme type="clicki">utw("","删除","你正在执行删除操作，是否继续?","确定","取消",false,v)
+{
+t()
+{
+  ss(sss.host+"api.php",api)
+  ss("type=delete&name="+sss.name,post)
+  hs(api,post,"utf-8",back)
+  ufnsui()
+  {
+    tw(back)
+    end()
+  }
+}
+}
+else
+{
+}</eventItme></event>
+</View>
+<View id="16" did="1" type="NestedScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="27" did="17" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="28" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="12" did="28" type="CardView">
+<ppt>width=-1
+height=-2
+layout_margin=15dp
+app_CardcornerRadius=5dp
+app_CardElevation=1dp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="14" type="ImageView">
+<ppt>width=60dp
+height=60dp
+src=@mmexport1593946211419.png
+</ppt>
+<event></event>
+</View>
+<View id="33" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+paddingLeft=10dp
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="34" did="33" type="TextView">
+<ppt>width=-2
+height=-2
+text=Name
+textColor=#424242
+textSize=14.5sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="35" did="33" type="TextView">
+<ppt>width=-2
+height=-2
+text=Age:17
+layout_marginTop=3dp
+</ppt>
+<event></event>
+</View>
+<View id="26" did="28" type="CardView">
+<ppt>width=-1
+height=-2
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="25" did="26" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="29" did="25" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center_vertical
+paddingLeft=15dp
+</ppt>
+<event></event>
+</View>
+<View id="30" did="29" type="TextView">
+<ppt>width=-2
+height=-2
+text=足迹（0）
+textColor=#424242
+textSize=14sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="31" did="25" type="TextView">
+<ppt>width=-1
+height=1
+text=
+BackgroundColor=#ffcbcbcb
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="32" did="25" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="36" did="25" type="TextView">
+<ppt>width=-1
+height=100dp
+text=亲，没有签到记录呀？
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//状态栏设置
+gvs(1,v1)
+java(null,v1,"android.view.View.setTranslationZ","float","100")
+//tw("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+//8192改成1024为白色
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+
+us(34,"text",sss.name)
+ss("Age:"+sss.age,age)
+us(35,"text",age)
+//发起http请求
+t()
+{
+  ss(sss.host+"api.php",api)
+  ss("type=person_sign&name="+sss.name,post)
+  hs(api,post,"utf-8",user_list)
+  f(user_list=="empty")
+  {
+    ufnsui()
+    {
+      us(36,"visibility","visible")
+    }
+    endcode
+  }
+  json(user_list,users)
+  syso(users)
+  json(users, "list", "list", list)
+  json(list, "size", size)
+  w(size &gt; 0)
+  {
+    s-(1, size)
+    syso(size)
+    json(list, "data", size, item)
+    json(item,"get","status",status)
+    json(item,"get","file",file)
+    json(item,"get","date",date)
+    ula(lists,1=file,3=date,6=status)
+  }
+  ufnsui()
+  {
+    uls(32,lists,"preson_list.iyu",-1,-2)
+    ug(32,"count",num)
+    ss("足迹("+num+")",text)
+    us(30,"text",text)
+  }
+  
+}</eventItme></UIEventset>

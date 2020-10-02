@@ -1,0 +1,119 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=人员管理
+textColor=#009688
+textSize=22sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="9" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical|right</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="ImageView">
+<ppt>width=56dp
+height=56dp
+src=@mmexport1593945533665.png
+padding=14dp
+layout_marginRight=5dp
+BackgroundRipple=#eeeeee</ppt>
+<event><eventItme type="clicki">uigo("Add_preson.iyu")</eventItme></event>
+</View>
+<View id="12" did="1" type="SwipeRefreshLayout">
+<ppt>width=-1
+height=-2
+</ppt>
+<event><eventItme type="onrefresh">//发起http请求
+t()
+{
+  ss(sss.host+"api.php",api)
+  s post = "type=app_preson"
+  hs(api,post,"utf-8",user_list)
+  json(user_list,users)
+  syso(users)
+  json(users, "list", "list", list)
+  json(list, "size", size)
+  w(size &gt; 0)
+  {
+    s-(1, size)
+    syso(size)
+    json(list, "data", size, item)
+    json(item,"get","name",name)
+    syso(name)
+    json(item,"get","age",age)
+    json(item,"get","today_sign",today_sign)
+    json(item,"get","time",time)
+    ula(lists,1=null,3=name,5=time,8=today_sign)
+  }
+  ufnsui()
+  {
+    us(12,"refreshing",false)
+    uls(11,lists,"user_list.iyu",-1,-2)
+  }
+  
+}</eventItme></event>
+</View>
+<View id="11" did="12" type="ListView">
+<ppt>width=-1
+height=-1
+dividerHeight=0</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//状态栏设置
+gvs(1,v1)
+java(null,v1,"android.view.View.setTranslationZ","float","100")
+//tw("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+//8192改成1024为白色
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+
+//发起http请求
+t()
+{
+  ss(sss.host+"api.php",api)
+  s post = "type=app_preson"
+  hs(api,post,"utf-8",user_list)
+  json(user_list,users)
+  syso(users)
+  json(users, "list", "list", list)
+  json(list, "size", size)
+  w(size &gt; 0)
+  {
+    s-(1, size)
+    syso(size)
+    json(list, "data", size, item)
+    json(item,"get","name",name)
+    syso(name)
+    json(item,"get","age",age)
+    json(item,"get","today_sign",today_sign)
+    json(item,"get","time",time)
+    ula(lists,1=age,3=name,5=time,8=today_sign)
+  }
+  ufnsui()
+  {
+    uls(11,lists,"user_list.iyu",-1,-2)
+  }
+  
+}</eventItme></UIEventset>

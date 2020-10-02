@@ -1,0 +1,294 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white
+</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=15dp
+layout_marginBottom=5dp
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=FaceSign
+textColor=#009688
+textSize=22sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=right|center_vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=56dp
+height=56dp
+src=@mmexport1593939553126.png
+padding=16dp
+layout_marginRight=5dp
+BackgroundRipple=#eeeeee</ppt>
+<event><eventItme type="clicki">uigo("about.iyu")</eventItme></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="7" did="4" type="CardView">
+<ppt>width=-1
+height=50dp
+layout_margin=15dp
+app_CardBackgroundColor=#ffffffff
+app_CardcornerRadius=25dp
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+Backgroundcolor=#eeeeee
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ImageView">
+<ppt>width=20dp
+height=20dp
+src=@mmexport1593939991521.png
+layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=今日行踪：
+layout_marginLeft=10dp
+textColor=#424242
+textSize=14.5sp
+</ppt>
+<event></event>
+</View>
+<View id="11" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=520
+textColor=#424242
+textSize=16sp
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="12" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+paddingTop=10dp
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center_horizontal
+paddingTop=15dp
+layout_marginLeft=20dp</ppt>
+<event></event>
+</View>
+<View id="16" did="13" type="CardView">
+<ppt>width=140dp
+height=160dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=1dp
+app_CardcornerRadius=10dp</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FAFAFA
+gravity=center
+BackgroundRipple=#ffa3a3a3</ppt>
+<event><eventItme type="clicki">uigo("user.iyu")</eventItme></event>
+</View>
+<View id="18" did="17" type="ImageView">
+<ppt>width=55dp
+height=55dp
+src=@mmexport1593943303188.png
+</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=人员管理
+layout_marginTop=15dp
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="20" did="13" type="CardView">
+<ppt>width=140dp
+height=160dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=1dp
+app_CardcornerRadius=10dp
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FAFAFA
+gravity=center
+BackgroundRipple=#ffa3a3a3</ppt>
+<event><eventItme type="clicki">tw("暂无，正加紧开发中...")</eventItme></event>
+</View>
+<View id="22" did="21" type="ImageView">
+<ppt>width=55dp
+height=55dp
+src=@mmexport1593943306442.png</ppt>
+<event></event>
+</View>
+<View id="23" did="21" type="TextView">
+<ppt>width=-2
+height=-2
+text=可视数据
+layout_marginTop=15dp
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+paddingTop=1dp
+gravity=center_horizontal
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="24" did="14" type="CardView">
+<ppt>width=140dp
+height=160dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=1dp
+app_CardcornerRadius=10dp</ppt>
+<event></event>
+</View>
+<View id="25" did="24" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FAFAFA
+gravity=center
+BackgroundRipple=#ffa3a3a3</ppt>
+<event><eventItme type="clicki">uigo("SignData.iyu")
+sss type="signD"</eventItme></event>
+</View>
+<View id="26" did="25" type="ImageView">
+<ppt>width=55dp
+height=55dp
+src=@mmexport1593943295128.png</ppt>
+<event></event>
+</View>
+<View id="27" did="25" type="TextView">
+<ppt>width=-2
+height=-2
+text=出现记录
+layout_marginTop=15dp
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="28" did="14" type="CardView">
+<ppt>width=140dp
+height=160dp
+app_CardBackgroundColor=#ffffffff
+app_CardElevation=1dp
+app_CardcornerRadius=10dp
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+BackgroundColor=#FAFAFA
+gravity=center
+BackgroundRipple=#ffa3a3a3</ppt>
+<event><eventItme type="clicki">uigo("SignData.iyu")
+sss type="into"</eventItme></event>
+</View>
+<View id="30" did="29" type="ImageView">
+<ppt>width=55dp
+height=55dp
+src=@mmexport1593943298889.png</ppt>
+<event></event>
+</View>
+<View id="31" did="29" type="TextView">
+<ppt>width=-2
+height=-2
+text=全行踪记录
+layout_marginTop=15dp
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="32" did="4" type="TextView">
+<ppt>width=-1
+height=-2
+text=桂华中学  - LPS
+gravity=center
+layout_marginBottom=10dp
+textSize=13sp</ppt>
+<event></event>
+</View>
+<View id="34" did="4" type="TextView">
+<ppt>width=-1
+height=-2
+text=人工智能应用大赛作品
+gravity=center
+layout_marginBottom=10dp
+textSize=13sp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//状态栏设置
+gvs(2,v1)
+java(null,v1,"android.view.View.setTranslationZ","float","100")
+//tw("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+//8192改成1024为白色
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+
+//发起http请求
+t()
+{
+  ss(sss.host+"api.php",api)
+  s post = "type=sign_num"
+  hs(api,post,"utf-8",num)
+  ufnsui()
+  {
+    us(11,"text",num)
+  } 
+}</eventItme></UIEventset>

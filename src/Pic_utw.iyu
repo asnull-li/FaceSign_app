@@ -1,0 +1,41 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white
+padding=15dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=图像
+textColor=#009688
+textSize=18sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+padding=15dp</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ProgressBar">
+<ppt>width=-2
+height=-2
+style=16842871</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="ImageView">
+<ppt>width=-1
+height=-2
+src=17301567
+scaleType=fitxy
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

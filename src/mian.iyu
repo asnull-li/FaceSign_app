@@ -1,0 +1,8 @@
+<UIEventset><eventItme type="loading">
+//--全局配置
+
+//服务器地址
+sss host="http://facesign.fasv.top/"
+
+uigo("home.iyu")
+end()</eventItme></UIEventset>

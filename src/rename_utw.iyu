@@ -1,0 +1,61 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white
+padding=15dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=重命名
+textColor=#009688
+textSize=18sp
+textStyle=bold
+</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="EditText">
+<ppt>width=-1
+height=-2
+text=
+hint=新名字
+textSize=14sp
+layout_marginTop=15dp
+</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+layout_marginTop=15dp
+orientation=horizontal
+gravity=right|center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="CardView">
+<ppt>width=70dp
+height=35dp
+app_CardElevation=2dp
+app_CardBackgroundColor=#ffffffff
+app_CardcornerRadius=5dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundColor=#26A69A</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=确定
+textColor=#ffffffff</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>
